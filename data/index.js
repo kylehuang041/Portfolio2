@@ -482,11 +482,15 @@ export const photos = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/link.svg",
+    alt: "LinkedIn",
+    link: "https://www.linkedin.com/in/kyle-h/",
   },
   {
     id: 2,
-    img: "/link.svg",
+    img: "/git.svg",
+    alt: "GitHub",
+    link: "https://github.com/kylehuang041",
   },
 ];
 

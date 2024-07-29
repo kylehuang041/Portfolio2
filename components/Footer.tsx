@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { personalInfo as info } from "@/data";
+import { socialMedia } from "@/data";
 
 const Footer = () => {
   return (
@@ -50,13 +51,13 @@ const Footer = () => {
       <div className="flex justify-between items-center gap-3 mb-3 px-4 absolute bottom-0 left-0 right-0">
         <ul className="flex gap-4">
           <li>
-            <a href="https://www.linkedin.com/in/kyle-huang-041/" target="_blank">
-              <Image src="/link.svg" alt="LinkedIn" width={28} height={28} />
+            <a href={socialMedia[0].link} target="_blank">
+              <Image src={socialMedia[0].img} alt={socialMedia[0].alt} width={28} height={28} />
             </a>
           </li>
           <li>
-            <a href="https://github.com/kylehuang041" target="_blank">
-              <Image src="/git.svg" alt="GitHub" width={28} height={28} />
+            <a href={socialMedia[1].link} target="_blank">
+              <Image src={socialMedia[1].img} alt={socialMedia[1].alt} width={28} height={28} />
             </a>
           </li>
         </ul>
