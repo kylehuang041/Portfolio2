@@ -3,7 +3,7 @@ import { personalInfo as info } from "@/data";
 
 const Footer = () => {
   return (
-    <footer className="bg-black-100 flex flex-col gap-3 min-h-screen relative">
+    <footer className="bg-black-100 flex flex-col gap-3 min-h-[600px] relative">
       {/* background grid */}
       <div className="w-full absolute left-0 bottom-0 min-h-96">
         <img
@@ -33,7 +33,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-25 left-0">
+      {/* Technologies and Tools */}
+      <div className="absolute bottom-25 left-0 sm:top-0 sm:left-4">
         <h3 className="font-bold text-xl-2">Technologies and Tools</h3>
         <ul className="mt-2">
           <li>&bull;&nbsp;Next.js</li>
