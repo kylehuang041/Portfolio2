@@ -1,6 +1,6 @@
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from "./MagicButton";
+import MagicButton from "./ui/MagicButton";
 import { FaDownload } from "react-icons/fa";
 import { quote, heroDesc } from "../data";
 

@@ -33,6 +33,18 @@ const Footer = () => {
         </div>
       </div>
 
+      <div className="absolute bottom-25 left-0">
+        <h3 className="font-bold text-xl-2">Technologies and Tools</h3>
+        <ul className="mt-2">
+          <li>&bull;&nbsp;Next.js</li>
+          <li>&bull;&nbsp;Tailwind CSS</li>
+          <li>&bull;&nbsp;Framer Motion</li>
+          <li>&bull;&nbsp;Git</li>
+          <li>&bull;&nbsp;GitHub</li>
+          <li>&bull;&nbsp;Node.js</li>
+        </ul>
+      </div>
+
       {/* Media Links */}
       <div className="flex justify-between items-center gap-3 mb-3 px-4 absolute bottom-0 left-0 right-0">
         <ul className="flex gap-4">

@@ -2,8 +2,11 @@
 
 import { useState } from "react";
 import { cn } from "@/utils/cn";
-import MagicButton from "../MagicButton";
+import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { BackgroundGradientAnimation } from "./GradientBg";
+import animationData from "@/data/confetti.json";
+import Lottie from "lottie-react";
 
 export const BentoGrid = ({
   className,
@@ -46,6 +49,15 @@ export const BentoGridItem = ({
   const leftLists = ["React.js", "Node.js", "Express.js"];
   const rightLists = ["PostgreSQL", "AWS", "CSS"];
   const [copied, setCopied] = useState(false);
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   const handleCopy = () => {
     const text = "kylehuang041@gmail.com";
     navigator.clipboard.writeText(text);
@@ -85,6 +97,13 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+
+        {id === 6 && (
+          // add background animation , remove the p tag
+          <BackgroundGradientAnimation>
+            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+          </BackgroundGradientAnimation>
+        )}
 
         <div
           className={cn(
@@ -142,6 +161,8 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
+                {/* <img src="/confetti.gif" alt="confetti" /> */}
+                <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton

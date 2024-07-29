@@ -1,8 +1,8 @@
 // Navigation items
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
   { name: "Experiences", link: "#experience" },
+  { name: "Projects", link: "#projects" },
   { name: "Photos", link: "#photos" },
   { name: "Contact", link: "#contact" },
 ];
@@ -23,7 +23,7 @@ export const quote = {
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I am great with teamwork and collaboration",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -33,7 +33,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm flexible with various kinds of projects",
+    title: "I can quickly adapt to new projects and technologies",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "opacity-50 bg-black",
@@ -100,10 +100,18 @@ export const projects = [
   {
     id: 1,
     title: "BlogIt",
-    des: "Built a fullstack blog application where users can create, read, and delete posts",
+    des: "Built a fullstack blog application where users can create, edit, read, and delete posts.",
     img: "blogit.png",
     iconLists: [""],
     link: "https://github.com/kylehuang041/BlogIt",
+  },
+  {
+    id: 1,
+    title: "Escape Space",
+    des: "A puzzle first-person video game where the player has to escape from the space station that enslaves space miners.",
+    img: "../b4.svg",
+    iconLists: [""],
+    link: "https://github.com/kylehuang041/EscapeSpace",
   },
   {
     id: 2,
