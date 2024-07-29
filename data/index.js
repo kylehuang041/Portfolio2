@@ -88,6 +88,7 @@ export const gridItems = [
 export const workExperience = [
   {
     id: 1,
+    company: "Lijie Cleaning LLC",
     title: "Fullstack Software Engineer Intern",
     date: "Jan 2024 - Jun 2024",
     desc: "Created an appointment booking website from scratch with a team of two developers.",

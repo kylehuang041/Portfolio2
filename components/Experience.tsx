@@ -9,6 +9,7 @@ const Experience = () => {
         {workExperience.map((item, i) => (
           <GlareCard key={i} className="p-5">
             <h2 className="text-lg font-bold">{item.title}</h2>
+            <h3>{item.company}</h3>
             <p className="text-sm text-gray-400">{item.date}</p>
             <p className="text-base mt-2">{item.desc}</p>
           </GlareCard>
