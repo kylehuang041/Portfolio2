@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="flex-grow flex items-center justify-center">
         <div className="flex flex-col md:flex-row border border-darkblue-1000 p-4 rounded-lg w-fit justify-center items-center gap-2 mx-auto">
           <Image
-            src={`/img/${info.photo}`}
+            src={`/bahana/img/${info.photo}`}
             alt="Image of Kyle Huang"
             width={100}
             height={100}
