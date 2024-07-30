@@ -53,12 +53,12 @@ const Footer = () => {
         <ul className="flex gap-4">
           <li>
             <a href={socialMedia[0].link} target="_blank">
-              <img src={socialMedia[0].img} alt={socialMedia[0].alt} width={28} height={28} />
+              <img src={`./img/${socialMedia[0].img}`} alt={socialMedia[0].alt} width={28} height={28} />
             </a>
           </li>
           <li>
             <a href={socialMedia[1].link} target="_blank">
-              <img src={socialMedia[1].img} alt={socialMedia[1].alt} width={28} height={28} />
+              <img src={`./img/${socialMedia[1].img}`} alt={socialMedia[1].alt} width={28} height={28} />
             </a>
           </li>
         </ul>

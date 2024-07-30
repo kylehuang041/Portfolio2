@@ -53,7 +53,7 @@ function ProjectCard({ proj }: { proj: any }) {
         className="w-full mt-4"
       >
         <Image
-          src={`/img/${proj.img}`}
+          src={`./img/${proj.img}`}
           className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
           alt={proj.title}
           width={500}
