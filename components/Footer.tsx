@@ -41,9 +41,9 @@ const Footer = () => {
           <li>&bull;&nbsp;Next.js</li>
           <li>&bull;&nbsp;Tailwind CSS</li>
           <li>&bull;&nbsp;Framer Motion</li>
+          <li>&bull;&nbsp;Aceternity UI</li>
           <li>&bull;&nbsp;TypeScript</li>
-          <li>&bull;&nbsp;Git</li>
-          <li>&bull;&nbsp;GitHub</li>
+          <li>&bull;&nbsp;Git/GitHub/Github Actions</li>
           <li>&bull;&nbsp;Node.js</li>
         </ul>
       </div>
