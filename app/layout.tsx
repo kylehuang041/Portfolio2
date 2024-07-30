@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Kyle's Portfolio",
   description: "Portfolio 2.0 with Next.js and Tailwind",
   icons: {
-    icon: './app/favicon.png'
+    icon: './favicon.png'
   },
 };
 
