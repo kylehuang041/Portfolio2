@@ -8,7 +8,7 @@ const Footer = () => {
       {/* background grid */}
       <div className="w-full absolute left-0 bottom-0 min-h-96">
         <img
-          src="/footer-grid.svg"
+          src="./footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-75"
         />
@@ -17,8 +17,8 @@ const Footer = () => {
       {/* Contact Info */}
       <div className="flex-grow flex items-center justify-center">
         <div className="flex flex-col md:flex-row border border-darkblue-1000 p-4 rounded-lg w-fit justify-center items-center gap-2 mx-auto">
-          <Image
-            src={`/bahana/img/${info.photo}`}
+          <img
+            src={`./bahana/img/${info.photo}`}
             alt="Image of Kyle Huang"
             width={100}
             height={100}
@@ -53,12 +53,12 @@ const Footer = () => {
         <ul className="flex gap-4">
           <li>
             <a href={socialMedia[0].link} target="_blank">
-              <Image src={socialMedia[0].img} alt={socialMedia[0].alt} width={28} height={28} />
+              <img src={socialMedia[0].img} alt={socialMedia[0].alt} width={28} height={28} />
             </a>
           </li>
           <li>
             <a href={socialMedia[1].link} target="_blank">
-              <Image src={socialMedia[1].img} alt={socialMedia[1].alt} width={28} height={28} />
+              <img src={socialMedia[1].img} alt={socialMedia[1].alt} width={28} height={28} />
             </a>
           </li>
         </ul>
