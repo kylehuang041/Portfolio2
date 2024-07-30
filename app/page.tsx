@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Projects from "@/components/Projects";
 import { PhotoGallery } from "@/components/Photos";
-// import {ThreeDCardDemo} from "@/components/Tools";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
