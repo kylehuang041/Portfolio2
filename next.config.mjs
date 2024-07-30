@@ -5,6 +5,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   assetPrefix: './',
+  basePath: "/public",
   images: {
     unoptimized: true,
   },
