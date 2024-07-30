@@ -6,13 +6,14 @@ import Image from 'next/image';
 
 const createPhotos = () => {
   return photos.map((photo) => {
+    const src = `./img/${photo.filename}`;
     return {
       location: photo.location,
-      src: `/img/${photo.filename}`,
+      src: src,
       content: (
         <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
           <Image
-            src={`./img/${photo.filename}`}
+            src={src}
             alt={`Photo by ${photo.by} in ${photo.location}`}
             width={500}
             height={300}
