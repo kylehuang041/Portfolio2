@@ -480,21 +480,6 @@ export const photos = [
 
 
 // Footer
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/link.svg",
-    alt: "LinkedIn",
-    link: "https://www.linkedin.com/in/kyle-h/",
-  },
-  {
-    id: 2,
-    img: "/git.svg",
-    alt: "GitHub",
-    link: "https://github.com/kylehuang041",
-  },
-];
-
 export const personalInfo = {
   photo: "Kyle_Huang.png",
   name: "Kyle Huang",
@@ -504,3 +489,18 @@ export const personalInfo = {
   concentration: "Information Assurance and Cybersecurity",
   description: "I'm a fullstack software engineer with a passion for building user-friendly and efficient web applications."
 }
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "link.svg",
+    alt: "LinkedIn",
+    link: "https://www.linkedin.com/in/kyle-h/",
+  },
+  {
+    id: 2,
+    img: "git.svg",
+    alt: "GitHub",
+    link: "https://github.com/kylehuang041",
+  },
+];

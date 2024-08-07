@@ -4,7 +4,7 @@ import { socialMedia } from "@/data";
 
 const Footer = () => {
   return (
-    <footer className="bg-black-100 flex flex-col gap-3 min-h-[600px] relative">
+    <footer className="bg-black-100 flex flex-col gap-3 h-full w-full">
       {/* background grid */}
       <div className="w-full absolute left-0 bottom-0 min-h-96">
         <img
@@ -14,10 +14,24 @@ const Footer = () => {
         />
       </div>
 
+      {/* Technologies and Tools */}
+      <div className="relative z-10">
+        <h3 className="font-bold text-xl-2">Technologies and Tools</h3>
+        <ul className="mt-2">
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Next.js</li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Tailwind CSS</li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Framer Motion</li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Aceternity UI</li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;TypeScript</li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Git/GitHub/Github Actions</li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Node.js</li>
+        </ul>
+      </div>
+
       {/* Contact Info */}
-      <div className="flex-grow flex items-center justify-center">
-        <div className="flex flex-col md:flex-row border border-darkblue-1000 p-4 rounded-lg w-fit justify-center items-center gap-2 mx-auto">
-          <img
+      <div className="flex-grow flex items-center justify-center my-8">
+        <div className="flex flex-col sm:flex-col md:flex-row border border-darkblue-1000 p-4 rounded-lg w-fit justify-center items-center gap-2 mx-auto">
+          <Image
             src={`./img/${info.photo}`}
             alt="Image of Kyle Huang"
             width={100}
@@ -34,31 +48,17 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Technologies and Tools */}
-      <div className="absolute bottom-25 left-0 sm:top-0 sm:left-4">
-        <h3 className="font-bold text-xl-2">Technologies and Tools</h3>
-        <ul className="mt-2">
-          <li>&bull;&nbsp;Next.js</li>
-          <li>&bull;&nbsp;Tailwind CSS</li>
-          <li>&bull;&nbsp;Framer Motion</li>
-          <li>&bull;&nbsp;Aceternity UI</li>
-          <li>&bull;&nbsp;TypeScript</li>
-          <li>&bull;&nbsp;Git/GitHub/Github Actions</li>
-          <li>&bull;&nbsp;Node.js</li>
-        </ul>
-      </div>
-
       {/* Media Links */}
-      <div className="flex justify-between items-center gap-3 mb-3 px-4 absolute bottom-0 left-0 right-0">
+      <div className="flex justify-between items-center gap-3 mb-3 px-4">
         <ul className="flex gap-4">
           <li>
             <a href={socialMedia[0].link} target="_blank">
-              <img src={`./img/${socialMedia[0].img}`} alt={socialMedia[0].alt} width={28} height={28} />
+              <Image src={`./img/${socialMedia[0].img}`} alt={socialMedia[0].alt} width={28} height={28} />
             </a>
           </li>
           <li>
             <a href={socialMedia[1].link} target="_blank">
-              <img src={`./img/${socialMedia[1].img}`} alt={socialMedia[1].alt} width={28} height={28} />
+              <Image src={`./img/${socialMedia[1].img}`} alt={socialMedia[1].alt} width={28} height={28} />
             </a>
           </li>
         </ul>
