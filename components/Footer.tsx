@@ -18,13 +18,27 @@ const Footer = () => {
       <div className="relative z-10">
         <h3 className="font-bold text-xl-2">Technologies and Tools</h3>
         <ul className="mt-2">
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Next.js</li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Tailwind CSS</li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Framer Motion</li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Aceternity UI</li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;TypeScript</li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Git/GitHub/Github Actions</li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">&bull;&nbsp;Node.js</li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+            &bull;&nbsp;Next.js
+          </li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+            &bull;&nbsp;Tailwind CSS
+          </li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+            &bull;&nbsp;Framer Motion
+          </li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+            &bull;&nbsp;Aceternity UI
+          </li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+            &bull;&nbsp;TypeScript
+          </li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+            &bull;&nbsp;Git/GitHub/Github Actions
+          </li>
+          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+            &bull;&nbsp;Node.js
+          </li>
         </ul>
       </div>
 
@@ -42,7 +56,9 @@ const Footer = () => {
             <h3 className="font-bold text-xl">{info.name}</h3>
             <p className="text-sm mb-2">{info.email}</p>
             <p className="italic">{info.school}</p>
-            <p className="italic">{info.major}: {info.concentration}</p>
+            <p className="italic">
+              {info.major}: {info.concentration}
+            </p>
             <p className="mt-2">{info.description}</p>
           </div>
         </div>
@@ -51,16 +67,18 @@ const Footer = () => {
       {/* Media Links */}
       <div className="flex justify-between items-center gap-3 mb-3 px-4">
         <ul className="flex gap-4">
-          <li>
-            <a href={socialMedia[0].link} target="_blank">
-              <Image src={`./img/${socialMedia[0].img}`} alt={socialMedia[0].alt} width={28} height={28} />
-            </a>
-          </li>
-          <li>
-            <a href={socialMedia[1].link} target="_blank">
-              <Image src={`./img/${socialMedia[1].img}`} alt={socialMedia[1].alt} width={28} height={28} />
-            </a>
-          </li>
+          {socialMedia.map(({id, link, img, alt}) => (
+            <li key={id}>
+              <a href={link} target="_blank">
+                <Image
+                  src={`./${img}`}
+                  alt={alt}
+                  width={28}
+                  height={28}
+                />
+              </a>
+            </li>
+          ))}
         </ul>
         <p className="text-white">&copy; 2024 - All rights reserved</p>
       </div>
