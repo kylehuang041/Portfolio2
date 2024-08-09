@@ -20,7 +20,7 @@ const Footer = () => {
 
       {/* Technologies and Tools */}
       <div className="relative z-10">
-        <h3 className="font-bold text-xl my-10">Technologies and Tools</h3>
+        <h3 className="font-bold text-xl mb-8">Technologies and Tools</h3>
         <ul className="mt-2 flex flex-wrap gap-4">
           {techTools.map(({id, name, icon} : {id: number, name: string, icon: JSX.Element}) => (
             <li key={id} className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
@@ -30,30 +30,8 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* Contact Info */}
-      <div className="flex-grow flex items-center justify-center my-8">
-        <div className="flex flex-col bg-[#111010] sm:flex-col md:flex-row border border-darkblue-1000 p-4 rounded-lg w-fit justify-center items-center gap-2 mx-auto">
-          <Image
-            src={`./img/${info.photo}`}
-            alt="Image of Kyle Huang"
-            width={100}
-            height={100}
-            className="mb-4 lg:mb-0 sm:w-[100px]"
-          />
-          <div id="contact">
-            <h3 className="font-bold text-3xl">{info.name}</h3>
-            <p className="text-sm mb-2">{info.email}</p>
-            <p className="text-xl">{info.school}</p>
-            <p className="italic">
-              {info.major}: {info.concentration}
-            </p>
-            <p className="italic">{info.status}</p>
-          </div>
-        </div>
-      </div>
-
       {/* Media Links */}
-      <div className="flex justify-between items-center gap-3 mb-3 px-4">
+      <div className="flex justify-between items-center gap-3 mb-3 px-4 mt-20">
         <ul className="flex gap-4">
           {socialMedia.map(({id, link, img, alt}) => (
             <li key={id}>

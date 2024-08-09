@@ -3,6 +3,8 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaDownload } from "react-icons/fa";
 import { quote, heroDesc } from "../data";
+import Image from "next/image";
+import { personalInfo as info } from "@/data";
 
 const Hero = () => {
   return (
@@ -45,19 +47,40 @@ const Hero = () => {
         </div>
 
         <div className="flex justify-center relative my-20 z-10">
-          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[75vw] flex flex-col items-center justify-center">
+            <h2 className="uppercase tracking-widest font-bold text-2xl text-center text-blue-100 max-w-80">
               {heroDesc.title}
             </h2>
 
-            <p className="mt-4 text-center text-[40px] md:text-5xl lg:text-6xl font-bold">
-              {heroDesc.author}
-            </p>
-
-            <TextGenerateEffect
-              words={heroDesc.words}
-              className="border-2 p-5 rounded-xl bg-black-100 text-center md:tracking-wider mt-4 mb-4 text-sm md:text-lg lg:text-2xl"
-            />
+            {/* Profile */}
+            <div className="flex-grow grid grid-cols-1 gap-4 items-center justify-center my-8 w-full lg:w-[100%]">
+              <div className="opacity-[0.9] bg-[#111010] border border-darkblue-1000 p-4 rounded-lg w-full justify-center items-center gap-2 mx-auto lg:grid lg:grid-cols-2 lg:gap-4">
+                <div className="flex flex-col gap-4 rounded-full p-20">
+                  <div className="flex justify-center">
+                    <Image
+                      src={`./img/${info.photo}`}
+                      alt="Image of Kyle Huang"
+                      width={150}
+                      height={150}
+                      className="mb-4 lg:mb-0 sm:w-[150px] rounded-full"
+                    />
+                  </div>
+                  <div id="contact" className="text-left flex flex-col items-start">
+                    <h3 className="font-bold text-3xl">{info.name}</h3>
+                    <p className="text-sm mb-2">{info.email}</p>
+                    <p className="text-xl">{info.school}</p>
+                    <p className="italic text-xs">
+                      {info.major}: {info.concentration}
+                    </p>
+                    <p className="italic text-xs">{info.status}</p>
+                  </div>
+                </div>
+                <TextGenerateEffect
+                    words={heroDesc.words}
+                    className="text-center md:tracking-wider mt-4 mb-4 text-sm md:text-lg lg:text-md"
+                  />
+              </div>
+            </div>
 
             <a href="/Kyle_Huang_Resume.pdf" download>
               <MagicButton
