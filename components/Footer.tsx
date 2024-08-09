@@ -16,7 +16,7 @@ const Footer = () => {
 
       {/* Technologies and Tools */}
       <div className="relative z-10">
-        <h3 className="font-bold text-xl-2">Technologies and Tools</h3>
+        <h3 className="font-bold text-xl-2">Technologies and tools used for this website</h3>
         <ul className="mt-2">
           <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
             &bull;&nbsp;Next.js
