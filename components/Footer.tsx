@@ -2,6 +2,8 @@ import Image from "next/image";
 import { personalInfo as info } from "@/data";
 import { socialMedia } from "@/data";
 import { techTools } from "@/data";
+import { FaPython } from 'react-icons/fa'
+
 
 const Footer = () => {
   return (
@@ -17,13 +19,13 @@ const Footer = () => {
 
       {/* Technologies and Tools */}
       <div className="relative z-10">
-        <h3 className="font-bold text-xl">Technologies and Tools</h3>
+        <h3 className="font-bold text-xl my-10">Technologies and Tools</h3>
         <ul className="mt-2 flex flex-wrap gap-4">
-          {/* {techTools.map(({id, name, icon}) => (
+          {techTools.map(({id, name, icon} : {id: number, name: string, icon: JSX.Element}) => (
             <li key={id} className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-              {icon ? icon : <span>{name}</span>}
+              {icon || name}
             </li>
-          ))} */}
+          ))}
         </ul>
       </div>
 

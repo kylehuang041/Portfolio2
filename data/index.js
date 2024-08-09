@@ -1,26 +1,34 @@
 import {
   FaPython,
   FaJava,
-  FaJs,
   FaHtml5,
-  FaCss3,
-  FaNodeJs,
+  FaNode,
   FaReact,
-  FaVisualStudio,
   FaLinux,
   FaMarkdown,
   FaDatabase,
-  FaMysql,
-  FaPostgresql,
-  FaSqlite,
-  FaTerminal,
-  FaGitBranch,
+  FaGitAlt,
   FaGithub,
-  FaResponsive,
   FaNpm,
-  FaGoogleDrive,
-  FaScrum,
-} from "react-icons";
+  FaAws
+} from "react-icons/fa";
+import {
+  DiPostgresql,
+  DiCss3,
+  DiSqllite,
+  DiMysql,
+  DiTerminal,
+  DiResponsive,
+  DiScrum
+} from 'react-icons/di'
+import {
+  SiVisualstudiocode,
+  SiNextdotjs,
+  SiMicrosoftazure,
+  SiVercel,
+  SiTailwindcss
+} from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 
 
 // Navigation items
@@ -507,111 +515,127 @@ export const photos = [
 // Footer
 
 // tech and tools - React Icons
+const techToolsIconSize = '35px';
 export const techTools = [
   {
     id: 1,
     name: "Python",
-    icon: <FaPython />,
+    icon: <FaPython style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 2,
     name: "Java",
-    icon: <FaJava />,
+    icon: <FaJava style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 3,
     name: "JavaScript",
-    icon: <FaJs />,
+    icon: <IoLogoJavascript style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 4,
     name: "HTML5",
-    icon: <FaHtml5 />,
+    icon: <FaHtml5 style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 5,
     name: "CSS3",
-    icon: <FaCss3 />,
+    icon: <DiCss3 style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 6,
     name: "Node.js",
-    icon: <FaNodeJs />,
+    icon: <FaNode style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 7,
     name: "React",
-    icon: <FaReact />,
+    icon: <FaReact style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 8,
     name: "Visual Studio",
-    icon: <FaVisualStudio />,
+    icon: <SiVisualstudiocode style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 9,
     name: "Linux",
-    icon: <FaLinux />,
+    icon: <FaLinux style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 10,
     name: "Markdown",
-    icon: <FaMarkdown />,
+    icon: <FaMarkdown style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 11,
     name: "Database",
-    icon: <FaDatabase />,
+    icon: <FaDatabase style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 12,
     name: "MySQL",
-    icon: <FaMysql />,
+    icon: <DiMysql style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 13,
     name: "PostgreSQL",
-    icon: <FaPostgresql />,
+    icon: <DiPostgresql style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 14,
     name: "SQLite",
-    icon: <FaSqlite />,
+    icon: <DiSqllite style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 15,
     name: "Terminal",
-    icon: <FaTerminal />,
+    icon: <DiTerminal style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 16,
     name: "Git Branch",
-    icon: <FaGitBranch />,
+    icon: <FaGitAlt style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 17,
     name: "GitHub",
-    icon: <FaGithub />,
+    icon: <FaGithub style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 18,
     name: "Responsive",
-    icon: <FaResponsive />,
+    icon: <DiResponsive style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 19,
     name: "NPM",
-    icon: <FaNpm />,
+    icon: <FaNpm style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 20,
-    name: "Google Drive",
-    icon: <FaGoogleDrive />,
+    name: "AWS",
+    icon: <FaAws style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
   {
     id: 21,
-    name: "Scrum",
-    icon: <FaScrum />,
+    name: "Next.js",
+    icon: <SiNextdotjs style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+  },
+  {
+    id: 22,
+    name: "Microsoft Azure",
+    icon: <SiMicrosoftazure style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+  },
+  {
+    id: 23,
+    name: "Vercel",
+    icon: <SiVercel style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+  },
+  {
+    id: 24,
+    name: "Tailwind CSS",
+    icon: <SiTailwindcss style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
   },
 ];
 
