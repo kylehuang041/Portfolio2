@@ -2,7 +2,6 @@ import Image from "next/image";
 import { personalInfo as info } from "@/data";
 import { socialMedia } from "@/data";
 import { techTools } from "@/data";
-import { FaPython } from 'react-icons/fa'
 
 
 const Footer = () => {

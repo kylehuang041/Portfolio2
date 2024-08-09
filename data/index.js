@@ -511,131 +511,131 @@ export const photos = [
   }
 ];
 
-
 // Footer
-
 // tech and tools - React Icons
-const techToolsIconSize = '35px';
+const techToolsIconSize = '50px';
+const techToolsBorder = '1px solid white';
+const techToolsPadding = '4px';
 export const techTools = [
   {
     id: 1,
     name: "Python",
-    icon: <FaPython style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaPython style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 2,
     name: "Java",
-    icon: <FaJava style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaJava style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 3,
     name: "JavaScript",
-    icon: <IoLogoJavascript style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <IoLogoJavascript style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 4,
     name: "HTML5",
-    icon: <FaHtml5 style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaHtml5 style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 5,
     name: "CSS3",
-    icon: <DiCss3 style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <DiCss3 style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 6,
     name: "Node.js",
-    icon: <FaNode style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaNode style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 7,
     name: "React",
-    icon: <FaReact style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaReact style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 8,
     name: "Visual Studio",
-    icon: <SiVisualstudiocode style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <SiVisualstudiocode style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 9,
     name: "Linux",
-    icon: <FaLinux style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaLinux style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 10,
     name: "Markdown",
-    icon: <FaMarkdown style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaMarkdown style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 11,
     name: "Database",
-    icon: <FaDatabase style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaDatabase style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 12,
     name: "MySQL",
-    icon: <DiMysql style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <DiMysql style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 13,
     name: "PostgreSQL",
-    icon: <DiPostgresql style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <DiPostgresql style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 14,
     name: "SQLite",
-    icon: <DiSqllite style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <DiSqllite style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 15,
     name: "Terminal",
-    icon: <DiTerminal style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <DiTerminal style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 16,
     name: "Git Branch",
-    icon: <FaGitAlt style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaGitAlt style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 17,
     name: "GitHub",
-    icon: <FaGithub style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaGithub style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 18,
     name: "Responsive",
-    icon: <DiResponsive style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <DiResponsive style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 19,
     name: "NPM",
-    icon: <FaNpm style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaNpm style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 20,
     name: "AWS",
-    icon: <FaAws style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <FaAws style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 21,
     name: "Next.js",
-    icon: <SiNextdotjs style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <SiNextdotjs style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 22,
     name: "Microsoft Azure",
-    icon: <SiMicrosoftazure style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <SiMicrosoftazure style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 23,
     name: "Vercel",
-    icon: <SiVercel style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <SiVercel style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
     id: 24,
     name: "Tailwind CSS",
-    icon: <SiTailwindcss style={{ fontSize: techToolsIconSize, border: '1px solid white' }} />,
+    icon: <SiTailwindcss style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
 ];
 
