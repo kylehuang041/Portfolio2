@@ -8,11 +8,13 @@ const Footer = () => {
   return (
     <footer className="bg-black-100 flex flex-col gap-3 h-full w-full">
       {/* background grid */}
-      <div className="w-full absolute left-0 bottom-0 min-h-96">
-        <img
+      <div className="w-full absolute left-0 bottom-0 min-h-96 -z-100">
+        <Image
           src="./footer-grid.svg"
           alt="grid"
           className="w-full h-full opacity-75"
+          width={100}
+          height={100}
         />
       </div>
 
@@ -55,7 +57,7 @@ const Footer = () => {
         <ul className="flex gap-4">
           {socialMedia.map(({id, link, img, alt}) => (
             <li key={id}>
-              <a href={link} target="_blank">
+              <a href={link} target="_blank" className="relative z-50">
                 <Image
                   src={`./${img}`}
                   alt={alt}
