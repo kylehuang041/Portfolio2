@@ -48,6 +48,8 @@ export const heroDesc = {
   words: "As a new graduate in computer science at UWB, I'm passionate about using technology to make things convenient, useful, and enjoyable for people. During my studies, I've taken various courses such as Artificial Intelligence, Cloud Computing, Web Development, Game Development, Database Systems, Network Design and Programming, and more. My specialty is in full-stack web development. I've had hands-on experience on projects such as cloud apps on Azure, built a user-friendly BlogIt web app, and a calculator as a desktop app that solves complex expressions. For work experience, I worked as fullstack software engineer intern creating an online appointment booking website for cleaning services. I'm most familiar with programming languages like JavaScript and Python. Most importantly, I'm always up for learning new materials and best practices for continuous learning and professional growth."
 }
 
+export const resumeFileName = "Kyle_Huang_Resume.pdf"
+
 export const quote = {
   quote: "Life consists not in holding good cards but in playing those you hold well.",
   author: "Josh Billings"

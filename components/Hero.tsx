@@ -5,6 +5,7 @@ import { FaDownload } from "react-icons/fa";
 import { quote, heroDesc } from "../data";
 import Image from "next/image";
 import { personalInfo as info } from "@/data";
+import { resumeFileName } from "../data";
 
 const Hero = () => {
   return (
@@ -82,7 +83,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <a href="/Kyle_Huang_Resume.pdf" download>
+            <a href={`./${resumeFileName}`} download>
               <MagicButton
                 title="Download Resume"
                 icon={<FaDownload />}
