@@ -22,7 +22,7 @@ export const GlowingStarsBackgroundCard = ({
         setMouseEnter(false);
       }}
       className={cn(
-        "bg-none h-screen w-screen fixed inset-0 translate-x-[0%] translate-y-[35%]",
+        "bg-none h-screen w-screen fixed inset-0 translate-x-[0%] translate-y-[15%]",
         className
       )}
     >
@@ -63,8 +63,8 @@ export const GlowingStarsTitle = ({
 };
 
 export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
-  const stars = 108;
-  const columns = 18;
+  const stars = 80;
+  const columns = 10;
 
   const [glowingStars, setGlowingStars] = useState<number[]>([]);
 
@@ -87,7 +87,7 @@ export const Illustration = ({ mouseEnter }: { mouseEnter: boolean }) => {
       style={{
         display: "grid",
         gridTemplateColumns: `repeat(${columns}, 1fr)`,
-        gap: `1px`,
+        gap: `80px`,
       }}
     >
       {[...Array(stars)].map((_, starIdx) => {
