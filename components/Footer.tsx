@@ -16,16 +16,16 @@ const Footer = () => {
       </div>
 
       {/* Technologies and Tools */}
-      {/* <div className="relative z-10">
-        <h3 className="font-bold text-xl-2">Technologies and tools used for this website</h3>
-        <ul className="mt-2">
-          {techTools.map((item, i) => (
-            <li key={i} className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-              <Image src={item.img} alt={item.name} width={50} height={50} />
+      <div className="relative z-10">
+        <h3 className="font-bold text-xl">Technologies and Tools</h3>
+        <ul className="mt-2 flex flex-wrap gap-4">
+          {/* {techTools.map(({id, name, icon}) => (
+            <li key={id} className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+              {icon ? icon : <span>{name}</span>}
             </li>
-          ))}
+          ))} */}
         </ul>
-      </div> */}
+      </div>
 
       {/* Contact Info */}
       <div className="flex-grow flex items-center justify-center my-8">

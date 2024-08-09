@@ -1,28 +1,26 @@
 import {
-  Python,
-  Java,
-  JsBadge,
-  Html5,
-  Css3,
-  NodejsPlainWordmark,
-  ExpressOriginalWordmark,
-  NextjsLineWordmark,
-  React,
-  Visualstudio,
-  Linux,
-  Markdown,
-  Database,
-  Mysql,
-  Postgresql,
-  Sqllite,
-  Terminal,
-  GitBranch,
-  Github,
-  Responsive,
-  Npm,
-  GoogleDrive,
-  Scrum,
-} from "devicons-react";
+  FaPython,
+  FaJava,
+  FaJs,
+  FaHtml5,
+  FaCss3,
+  FaNodeJs,
+  FaReact,
+  FaVisualStudio,
+  FaLinux,
+  FaMarkdown,
+  FaDatabase,
+  FaMysql,
+  FaPostgresql,
+  FaSqlite,
+  FaTerminal,
+  FaGitBranch,
+  FaGithub,
+  FaResponsive,
+  FaNpm,
+  FaGoogleDrive,
+  FaScrum,
+} from "react-icons";
 
 
 // Navigation items
@@ -39,7 +37,7 @@ export const navItems = [
 export const heroDesc = {
   title: "My Portfolio",
   author: "Kyle Huang",
-  words: "Hi, I'm a full stack developer and a recent graduate of computer science in Seattle, WA."
+  words: "As a new graduate in computer science at UWB, I'm passionate about using technology to make things convenient, useful, and enjoyable for people. During my studies, I've taken various courses such as Artificial Intelligence, Cloud Computing, Web Development, Game Development, Database Systems, Network Design and Programming, and more. My specialty is in full-stack web development. I've had hands-on experience on projects such as cloud apps on Azure, built a user-friendly BlogIt web app, and a calculator as a desktop app that solves complex expressions. For work experience, I worked as fullstack software engineer intern creating an online appointment booking website for cleaning services. I'm most familiar with programming languages like JavaScript and Python. Also, I'm always up for learning new materials and best practices for continuous learning and professional growth."
 }
 
 export const quote = {
@@ -510,31 +508,111 @@ export const photos = [
 
 // tech and tools - React Icons
 export const techTools = [
-  // {
-  //   id: 1,
-  //   name: "Next.js",
-  //   icon: <FaNextjs />,
-  // },
-  // {
-  //   id: 2,
-  //   name: "TailwindCSS",
-  //   icon: <FaTailwindcss />,
-  // },
-  // {
-  //   id: 3,
-  //   name: "Framer Motion",
-  //   icon: <FaFramer />,
-  // },
-  // {
-  //   id: 4,
-  //   name: "Acternity UI",
-  //   icon: <FaActernity />,
-  // },
-  // {
-  //   id: 5,
-  //   name: "GitHub",
-  //   icon: <FaGithub />,
-  // },
+  {
+    id: 1,
+    name: "Python",
+    icon: <FaPython />,
+  },
+  {
+    id: 2,
+    name: "Java",
+    icon: <FaJava />,
+  },
+  {
+    id: 3,
+    name: "JavaScript",
+    icon: <FaJs />,
+  },
+  {
+    id: 4,
+    name: "HTML5",
+    icon: <FaHtml5 />,
+  },
+  {
+    id: 5,
+    name: "CSS3",
+    icon: <FaCss3 />,
+  },
+  {
+    id: 6,
+    name: "Node.js",
+    icon: <FaNodeJs />,
+  },
+  {
+    id: 7,
+    name: "React",
+    icon: <FaReact />,
+  },
+  {
+    id: 8,
+    name: "Visual Studio",
+    icon: <FaVisualStudio />,
+  },
+  {
+    id: 9,
+    name: "Linux",
+    icon: <FaLinux />,
+  },
+  {
+    id: 10,
+    name: "Markdown",
+    icon: <FaMarkdown />,
+  },
+  {
+    id: 11,
+    name: "Database",
+    icon: <FaDatabase />,
+  },
+  {
+    id: 12,
+    name: "MySQL",
+    icon: <FaMysql />,
+  },
+  {
+    id: 13,
+    name: "PostgreSQL",
+    icon: <FaPostgresql />,
+  },
+  {
+    id: 14,
+    name: "SQLite",
+    icon: <FaSqlite />,
+  },
+  {
+    id: 15,
+    name: "Terminal",
+    icon: <FaTerminal />,
+  },
+  {
+    id: 16,
+    name: "Git Branch",
+    icon: <FaGitBranch />,
+  },
+  {
+    id: 17,
+    name: "GitHub",
+    icon: <FaGithub />,
+  },
+  {
+    id: 18,
+    name: "Responsive",
+    icon: <FaResponsive />,
+  },
+  {
+    id: 19,
+    name: "NPM",
+    icon: <FaNpm />,
+  },
+  {
+    id: 20,
+    name: "Google Drive",
+    icon: <FaGoogleDrive />,
+  },
+  {
+    id: 21,
+    name: "Scrum",
+    icon: <FaScrum />,
+  },
 ];
 
 export const personalInfo = {

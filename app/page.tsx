@@ -13,7 +13,7 @@ export default function Home() {
     <main className="relative bg-black-100 flex justify-center
       items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
       <div className="max-w-7xl w-full">
-        <GlowingStarsBackgroundCard className="" />
+        <GlowingStarsBackgroundCard />
         <FloatingNav
           navItems={navItems}        
         />
@@ -22,7 +22,6 @@ export default function Home() {
         <Experience />
         <Projects />
         <PhotoGallery />
-        {/* <Tools /> */}
         <Footer />
       </div>
     </main>
