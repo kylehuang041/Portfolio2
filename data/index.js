@@ -96,7 +96,7 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Currently migrating a local server to AWS",
+    title: "Currently migrating application on Linux Server to AWS",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
