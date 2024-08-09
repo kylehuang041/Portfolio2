@@ -63,6 +63,7 @@ const Footer = () => {
                   alt={alt}
                   width={28}
                   height={28}
+                  className="hover:opacity-[0.7]"
                 />
               </a>
             </li>
