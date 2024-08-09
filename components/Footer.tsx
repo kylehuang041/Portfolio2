@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { personalInfo as info } from "@/data";
 import { socialMedia } from "@/data";
+import { techTools } from "@/data";
 
 const Footer = () => {
   return (
@@ -15,32 +16,16 @@ const Footer = () => {
       </div>
 
       {/* Technologies and Tools */}
-      <div className="relative z-10">
+      {/* <div className="relative z-10">
         <h3 className="font-bold text-xl-2">Technologies and tools used for this website</h3>
         <ul className="mt-2">
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-            &bull;&nbsp;Next.js
-          </li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-            &bull;&nbsp;Tailwind CSS
-          </li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-            &bull;&nbsp;Framer Motion
-          </li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-            &bull;&nbsp;Aceternity UI
-          </li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-            &bull;&nbsp;TypeScript
-          </li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-            &bull;&nbsp;Git/GitHub/Github Actions
-          </li>
-          <li className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out text-white hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
-            &bull;&nbsp;Node.js
-          </li>
+          {techTools.map((item, i) => (
+            <li key={i} className="transform transition-transform hover:translate-x-1 duration-300 ease-in-out hover:drop-shadow-[0_0_2px_rgba(255,255,255,0.5)]">
+              <Image src={item.img} alt={item.name} width={50} height={50} />
+            </li>
+          ))}
         </ul>
-      </div>
+      </div> */}
 
       {/* Contact Info */}
       <div className="flex-grow flex items-center justify-center my-8">

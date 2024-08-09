@@ -1,3 +1,30 @@
+import {
+  Python,
+  Java,
+  JsBadge,
+  Html5,
+  Css3,
+  NodejsPlainWordmark,
+  ExpressOriginalWordmark,
+  NextjsLineWordmark,
+  React,
+  Visualstudio,
+  Linux,
+  Markdown,
+  Database,
+  Mysql,
+  Postgresql,
+  Sqllite,
+  Terminal,
+  GitBranch,
+  Github,
+  Responsive,
+  Npm,
+  GoogleDrive,
+  Scrum,
+} from "devicons-react";
+
+
 // Navigation items
 export const navItems = [
   { name: "About", link: "#about" },
@@ -480,6 +507,36 @@ export const photos = [
 
 
 // Footer
+
+// tech and tools - React Icons
+export const techTools = [
+  // {
+  //   id: 1,
+  //   name: "Next.js",
+  //   icon: <FaNextjs />,
+  // },
+  // {
+  //   id: 2,
+  //   name: "TailwindCSS",
+  //   icon: <FaTailwindcss />,
+  // },
+  // {
+  //   id: 3,
+  //   name: "Framer Motion",
+  //   icon: <FaFramer />,
+  // },
+  // {
+  //   id: 4,
+  //   name: "Acternity UI",
+  //   icon: <FaActernity />,
+  // },
+  // {
+  //   id: 5,
+  //   name: "GitHub",
+  //   icon: <FaGithub />,
+  // },
+];
+
 export const personalInfo = {
   photo: "Kyle_Huang.png",
   name: "Kyle Huang",
@@ -490,6 +547,7 @@ export const personalInfo = {
   description: "I'm a fullstack software engineer with a passion for building user-friendly and efficient web applications."
 }
 
+// social media
 export const socialMedia = [
   {
     id: 1,
