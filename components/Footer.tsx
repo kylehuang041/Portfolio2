@@ -29,7 +29,7 @@ const Footer = () => {
 
       {/* Contact Info */}
       <div className="flex-grow flex items-center justify-center my-8">
-        <div className="flex flex-col sm:flex-col md:flex-row border border-darkblue-1000 p-4 rounded-lg w-fit justify-center items-center gap-2 mx-auto">
+        <div className="flex flex-col bg-[#111010] sm:flex-col md:flex-row border border-darkblue-1000 p-4 rounded-lg w-fit justify-center items-center gap-2 mx-auto">
           <Image
             src={`./img/${info.photo}`}
             alt="Image of Kyle Huang"
@@ -38,13 +38,13 @@ const Footer = () => {
             className="mb-4 lg:mb-0 sm:w-[100px]"
           />
           <div id="contact">
-            <h3 className="font-bold text-xl">{info.name}</h3>
+            <h3 className="font-bold text-3xl">{info.name}</h3>
             <p className="text-sm mb-2">{info.email}</p>
-            <p className="italic">{info.school}</p>
+            <p className="text-xl">{info.school}</p>
             <p className="italic">
               {info.major}: {info.concentration}
             </p>
-            <p className="mt-2">{info.description}</p>
+            <p className="italic">{info.status}</p>
           </div>
         </div>
       </div>

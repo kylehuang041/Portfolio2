@@ -544,7 +544,7 @@ export const personalInfo = {
   school: "University of Washington - Bothell",
   major: "Computer Science and Software Engineering",
   concentration: "Information Assurance and Cybersecurity",
-  description: "I'm a fullstack software engineer with a passion for building user-friendly and efficient web applications."
+  status: "New Graduate"
 }
 
 // social media
