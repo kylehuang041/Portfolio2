@@ -131,13 +131,13 @@ const Footer = () => {
           </label>
         </div>
 
-        <label htmlFor="message" className="mb-2">
+        <label htmlFor="message mb-2">
           Message
         </label>
         <textarea
           id="message"
           name="message"
-          className="border border-gray-300 rounded py-5"
+          className="mb-4 mt-2 p-2 border border-gray-300 rounded"
           required
           autoComplete="off"
         />
