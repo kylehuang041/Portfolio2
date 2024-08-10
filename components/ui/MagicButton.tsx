@@ -12,10 +12,10 @@ const MagicButton = ({
   icon: React.ReactNode;
   position: string;
   type?: 'submit' | 'reset' | 'button';
-  handleClick: () => void;
+  handleClick?: () => void;
   otherClasses?: string;
   disabled?: boolean;
-  event?: HTMLEvent
+  event?: React.SyntheticEvent
 }) => {
   return (
     <button type={type || 'button'} onClick={handleClick} disabled={disabled} className={"relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] focus:outline-none focus:ring-offset-slate-50 md:w-60 md:mt-10"}>

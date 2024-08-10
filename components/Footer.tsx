@@ -6,12 +6,17 @@ import { techTools } from "@/data";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaEnvelope } from 'react-icons/fa'
 import MagicButton from "./ui/MagicButton";
+import { useRef } from 'react'
 
 const Footer = () => {
   const [state, handleSubmit] = useForm("manwjogg");
+  const contactFormRef = useRef<HTMLFormElement>(null);
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (state.succeeded && contactFormRef.current) {
+      contactFormRef.current.reset();
+    }
     handleSubmit(e);
   };
 
@@ -55,24 +60,25 @@ const Footer = () => {
 
       {/* Contact Form */}
       <form
+        ref={contactFormRef}
         onSubmit={handleFormSubmit}
         className="relative mt-10 flex flex-col border border-[1px solid black] p-4 rounded-lg bg-[#111110] opacity-[0.9] w-full max-w-[700px] mx-auto"
       >
         <h3 className="font-bold text-xl text-center">Contact Form</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 mt-5">
-          <label htmlFor="subject" className="mb-2 flex flex-col">
-            Subject
+          <label htmlFor="title" className="mb-2 flex flex-col">
+            Title
             <input
-              id="subject"
+              id="title"
               type="text"
-              name="subject"
+              name="title"
               className="mb-4 mt-2 p-2 border border-gray-300 rounded"
               required
               autoComplete="off"
             />
             <ValidationError
-              prefix="Subject"
-              field="subject"
+              prefix="Title"
+              field="title"
               errors={state.errors}
             />
           </label>
