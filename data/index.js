@@ -26,7 +26,8 @@ import {
   SiNextdotjs,
   SiMicrosoftazure,
   SiVercel,
-  SiTailwindcss
+  SiTailwindcss,
+  SiOpenai
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 
@@ -638,6 +639,11 @@ export const techTools = [
     id: 24,
     name: "Tailwind CSS",
     icon: <SiTailwindcss style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
+  },
+  {
+    id: 25,
+    name: "OpenAI",
+    icon: <SiOpenai  style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
 ];
 
