@@ -56,7 +56,7 @@ const Hero = () => {
             {/* Profile */}
             <div className="flex-grow grid grid-cols-1 gap-4 items-center justify-center my-8 w-full lg:w-[100%]">
               <div className="opacity-[0.9] bg-[#111010] border border-darkblue-1000 p-4 rounded-lg w-full justify-center items-center gap-2 mx-auto lg:grid lg:grid-cols-2 lg:gap-4">
-                <div className="flex flex-col gap-4 rounded-full p-20">
+                <div className="flex flex-col gap-4 rounded-full md:p-20">
                   <div className="flex justify-center">
                     <Image
                       src={`./img/${info.photo}`}
