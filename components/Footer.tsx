@@ -6,18 +6,45 @@ import { techTools } from "@/data";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaEnvelope } from 'react-icons/fa'
 import MagicButton from "./ui/MagicButton";
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
+
+interface ContactInput {
+  title: string;
+  email: string;
+  message: string;
+  firstName: string;
+  lastName: string;
+}
 
 const Footer = () => {
   const [state, handleSubmit] = useForm("manwjogg");
+  const [contactInput, setContactInput] = useState<ContactInput>({
+    title: "",
+    email: "",
+    message: "",
+    firstName: "",
+    lastName: "",
+  });
   const contactFormRef = useRef<HTMLFormElement>(null);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setContactInput({ ...contactInput, [e.target.name]: e.target.value });
+  }
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (state.succeeded && contactFormRef.current) {
-      contactFormRef.current.reset();
-    }
-    handleSubmit(e);
+    handleSubmit(e).then(() => {
+      if (state.succeeded && contactFormRef.current) {
+        contactFormRef.current.reset();
+        setContactInput({
+          title: "",
+          email: "",
+          message: "",
+          firstName: "",
+          lastName: "",
+        });
+      }
+    });
   };
 
   return (
@@ -74,7 +101,8 @@ const Footer = () => {
               name="title"
               className="mb-4 mt-2 p-2 border border-gray-300 rounded"
               required
-              autoComplete="off"
+              onChange={handleChange}
+              value={contactInput.title}
             />
             <ValidationError
               prefix="Title"
@@ -91,7 +119,8 @@ const Footer = () => {
               name="email"
               className="mb-4 mt-2 p-2 border border-gray-300 rounded"
               required
-              autoComplete="off"
+              onChange={handleChange}
+              value={contactInput.email}
             />
             <ValidationError
               prefix="Email"
@@ -110,7 +139,8 @@ const Footer = () => {
               name="firstName"
               className="mb-4 mt-2 p-2 border border-gray-300 rounded"
               required
-              autoComplete="off"
+              onChange={handleChange}
+              value={contactInput.firstName}
             />
             <ValidationError
               prefix="FirstName"
@@ -127,7 +157,8 @@ const Footer = () => {
               name="lastName"
               className="mb-4 mt-2 p-2 border border-gray-300 rounded"
               required
-              autoComplete="off"
+              onChange={handleChange}
+              value={contactInput.lastName}
             />
             <ValidationError
               prefix="LastName"
@@ -137,7 +168,7 @@ const Footer = () => {
           </label>
         </div>
 
-        <label htmlFor="message mb-2">
+        <label htmlFor="message" className="mb-2">
           Message
         </label>
         <textarea
@@ -145,7 +176,8 @@ const Footer = () => {
           name="message"
           className="mb-4 mt-2 p-2 border border-gray-300 rounded"
           required
-          autoComplete="off"
+          value={contactInput.message}
+          onChange={handleChange}
         />
         <ValidationError
           prefix="Message"

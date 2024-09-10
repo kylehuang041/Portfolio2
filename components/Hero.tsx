@@ -83,13 +83,13 @@ const Hero = () => {
               </div>
             </div>
 
-            <a href={`./${resumeFileName}`} download>
+            {/* <a href={`./${resumeFileName}`} download>
               <MagicButton
                 title="Download Resume"
                 icon={<FaDownload />}
                 position="right"
               />
-            </a>
+            </a> */}
 
             <blockquote className="mx-auto sm:mt-20 md:mt-25 lg:mt-30 mt-10 p-10 border-r-2 bg-[#0e082e]">
               <q className="text-left text-white before">{quote.quote}</q>
