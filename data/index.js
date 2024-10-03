@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 import {
   FaPython,
   FaJava,
@@ -29,8 +31,9 @@ import {
   SiTailwindcss,
   SiOpenai
 } from "react-icons/si";
+import { RiFirebaseLine } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
-
+import { TbBrandTypescript } from "react-icons/tb";
 
 // Navigation items
 export const navItems = [
@@ -123,11 +126,32 @@ export const gridItems = [
 // Work Experience
 export const workExperience = [
   {
-    id: 1,
+    id: 2,
+    company: "NoteNinjaCo",
+    title: "Software Development Engineer",
+    date: "August 2024 - Present 2024",
+    desc: "Developed a startup with 2 engineers on a interactive study platform targets towards college students. It has a chatbot for learning and support. It can generate quizzes, summaries/notes, and flashcards using AI from user input."
+  },
+  {
+    id: 2,
+    company: "Headstarter",
+    title: "AI Software Engineer Fellow",
+    date: "July 2024 - September 2024",
+    desc: "Implemented 5+ AI Projects using cutting-edge technologies led by top engineers from Capital One, Amazon, and Bloomberg."
+  },
+  {
+    id: 3,
+    company: "Headstarter Hackathon",
+    title: "Hackathon Participant",
+    date: "August 2024 - August 2024",
+    desc: "In a group of 5 engineers, we created a web designer using AI chatbot and won 1st place on our track."
+  },
+  {
+    id: 4,
     company: "Lijie Cleaning LLC",
     title: "Fullstack Software Engineer Intern",
-    date: "Jan 2024 - Jun 2024",
-    desc: "Created an appointment booking website from scratch with a team of two developers.",
+    date: "January 2024 - June 2024",
+    desc: "Created an appointment booking website for a cleaning business from scratch with a team of two developers.",
   },
 ];
 
@@ -576,6 +600,11 @@ export const techTools = [
     icon: <IoLogoJavascript style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
   {
+    id: 3,
+    name: "Typescript",
+    icon: <TbBrandTypescript style={{ fontSize: "60px", margin: "-5px" }} />,
+  },
+  {
     id: 4,
     name: "HTML5",
     icon: <FaHtml5 style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
@@ -683,8 +712,18 @@ export const techTools = [
   {
     id: 25,
     name: "OpenAI",
-    icon: <SiOpenai  style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
+    icon: <SiOpenai style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
   },
+  {
+    id: 26,
+    name: "Firebase",
+    icon: <RiFirebaseLine style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
+  },
+  {
+    id: 27,
+    name: "Pinecone",
+    icon: <Image style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} width={45} height={45} src="pinecone-icon-seeklogo.svg" />
+  }
 ];
 
 export const personalInfo = {
