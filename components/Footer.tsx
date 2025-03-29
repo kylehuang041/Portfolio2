@@ -87,6 +87,7 @@ const Footer = () => {
 
       {/* Contact Form */}
       <form
+        id="contact-form"
         ref={contactFormRef}
         onSubmit={handleFormSubmit}
         className="relative mt-10 flex flex-col border border-[1px solid black] p-4 rounded-lg bg-[#111110] opacity-[0.9] w-full max-w-[700px] mx-auto"

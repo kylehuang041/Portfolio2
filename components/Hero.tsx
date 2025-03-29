@@ -5,6 +5,7 @@ import { FaDownload } from "react-icons/fa";
 import { quote, heroDesc } from "../data";
 import Image from "next/image";
 import { personalInfo as info } from "@/data";
+import Link from "next/link"
 import { resumeFileName } from "../data";
 
 const Hero = () => {
@@ -68,12 +69,21 @@ const Hero = () => {
                   </div>
                   <div id="contact" className="text-left flex flex-col items-start">
                     <h3 className="font-bold text-3xl">{info.name}</h3>
-                    <p className="text-sm mb-2">{info.email}</p>
-                    <p className="text-xl">{info.school}</p>
-                    <p className="italic text-xs">
-                      {info.major}: {info.concentration}
-                    </p>
-                    <p className="italic text-xs">{info.status}</p>
+                    <p className="text-sm">{info.email}</p>
+                    <a href="#contact-form" className="text-white-500 underline transition-colors duration-300 hover:text-gray-500">Send Message Here - resume, chat, etc.</a>
+                    {
+                      info.schools.map((school, idx) => (
+                        <div key={school.school + idx} className="mt-3 md-3">
+                          <p className="text-xl">{school.school}</p>
+                          <p className="italic text-xs">
+                            {school.major}
+                            {school.concentration && `: ${school.concentration}`}
+                          </p>
+                          <p className="italic text-xs">{school.years}</p>
+                          <p className="italic text-xs">{school.status}</p>
+                        </div>
+                      ))
+                    }
                   </div>
                 </div>
                 <TextGenerateEffect

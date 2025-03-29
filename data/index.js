@@ -21,19 +21,19 @@ import {
   DiMysql,
   DiTerminal,
   DiResponsive,
-  DiScrum
+  DiVisualstudio
 } from 'react-icons/di'
 import {
-  SiVisualstudiocode,
   SiNextdotjs,
-  SiMicrosoftazure,
-  SiVercel,
-  SiTailwindcss,
-  SiOpenai
+  SiHuggingface,
+  SiFastapi
 } from "react-icons/si";
-import { RiFirebaseLine } from "react-icons/ri";
-import { IoLogoJavascript } from "react-icons/io5";
+import { RiFirebaseLine, RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
+import { VscAzure } from "react-icons/vsc";
 import { TbBrandTypescript } from "react-icons/tb";
+import { AiFillOpenAI } from "react-icons/ai";
+
 
 // Navigation items
 export const navItems = [
@@ -46,19 +46,40 @@ export const navItems = [
 
 
 // Hero Section
+export const personalInfo = {
+  photo: "Kyle_Huang.png",
+  name: "Kyle Huang",
+  email: "kylehuang041@gmail.com",
+  schools: [
+    {
+      school: "Georgia Institute of Technology",
+      major: "Computer Science",
+      concentration: "",
+      years: "Fall 2025 - June 2027 (Expected)",
+      status: "Incoming freshman"
+    },
+    {
+      school: "University of Washington - Bothell",
+      major: "Computer Science and Software Engineering",
+      concentration: "Information Assurance and Cybersecurity",
+      years: "September 2020 - June 2024",
+      status: "New Graduate"
+    }
+  ]
+}
 export const heroDesc = {
   title: "My Portfolio",
   author: "Kyle Huang",
-  words: "As a new graduate in computer science at UWB, I'm passionate about using technology to make things convenient, useful, and enjoyable for people. During my studies, I've taken various courses such as Artificial Intelligence, Cloud Computing, Web Development, Game Development, Database Systems, Network Design and Programming, and more. My specialty is in full-stack web development. I've had hands-on experience on projects such as cloud apps on Azure, built a user-friendly BlogIt web app, and a calculator as a desktop app that solves complex expressions. For work experience, I worked as fullstack software engineer intern creating an online appointment booking website for cleaning services. I'm most familiar with programming languages like JavaScript and Python. Most importantly, I'm always up for learning new materials and best practices for continuous learning and professional growth."
+  words: "Hello, I'm Kyle, a first-gen student. I'm an incoming master's in computer science at GA Tech this fall and a recent graduate from UWB. I'm passionate about developing technology that makes life more convenient, practical, and enjoyable. I like to understand how things work from end to end, and always eager to learn new technologies and best practices. My specialty is in full-stack development in web and artificial intelligence (AI).\n\nI'm flexible and quick to adapt to new teams, technologies, and challenges. With experience in agile scrum environments, I'm very familiar with meetings, sprints, reports, communication, teamwork, and collaboration. I’ve worked on various projects during my bachelor's at the UWB, including AI, cloud computing, web and game development, database systems, and network design and programming, and wish to learn more, such as machine learning and parallel and distributed computing, at GA Tech.\n\nI'm most comfortable with JavaScript and Python. I'm open to front-end, back-end, or full-stack software engineering roles across different areas, including web, gaming, mobile, desktop applications, and operating systems."
 }
-
 export const resumeFileName = "Kyle_Huang_Resume.pdf"
-
 export const quote = {
   quote: "Life consists not in holding good cards but in playing those you hold well.",
   author: "Josh Billings"
 }
 
+
+// Grid Section
 export const gridItems = [
   {
     id: 1,
@@ -123,31 +144,38 @@ export const gridItems = [
 ];
 
 
-// Work Experience
+// Work Experience Section
 export const workExperience = [
+  {
+    id: 1,
+    company: "Product Manager Accelerator",
+    title: "AI Engineer",
+    date: "February 2025 - April 2025",
+    desc: "Collaborating with a small team of developers and product managers to develop using AI/ML. Implementing design patterns and maintaining code quality in an Agile environment."
+  },
   {
     id: 2,
     company: "NoteNinjaCo",
     title: "Software Development Engineer",
-    date: "August 2024 - Present 2024",
+    date: "August 2024 - December 2024",
     desc: "Developed a startup with 2 engineers on a interactive study platform targets towards college students. It has a chatbot for learning and support. It can generate quizzes, summaries/notes, and flashcards using AI from user input."
   },
   {
-    id: 2,
+    id: 3,
     company: "Headstarter",
     title: "AI Software Engineer Fellow",
     date: "July 2024 - September 2024",
     desc: "Implemented 5+ AI Projects using cutting-edge technologies led by top engineers from Capital One, Amazon, and Bloomberg."
   },
   {
-    id: 3,
+    id: 4,
     company: "Headstarter Hackathon",
     title: "Hackathon Participant",
     date: "August 2024 - August 2024",
     desc: "In a group of 5 engineers, we created a web designer using AI chatbot and won 1st place on our track."
   },
   {
-    id: 4,
+    id: 5,
     company: "Lijie Cleaning LLC",
     title: "Fullstack Software Engineer Intern",
     date: "January 2024 - June 2024",
@@ -156,7 +184,7 @@ export const workExperience = [
 ];
 
 
-// Projects
+// Projects' Section
 export const projects = [
   {
     id: 1,
@@ -273,42 +301,7 @@ export const projects = [
 ];
 
 
-// Tools
-export const tools = [
-  {
-    id: 1,
-    name: "Next.js",
-    img: "/nextjs.svg",
-    nameImg: "nextjs.svg",
-  },
-  {
-    id: 2,
-    name: "TailwindCSS",
-    img: "/tailwindcss.svg",
-    nameImg: "tailwindcss.svg",
-  },
-  {
-    id: 3,
-    name: "Framer Motion",
-    img: "/framer.svg",
-    nameImg: "framer.svg",
-  },
-  {
-    id: 4,
-    name: "Acternity UI",
-    img: "/acternity.svg",
-    nameImg: "acternity.svg",
-  },
-  {
-    id: 5,
-    name: "GitHub",
-    img: "/git.svg",
-    nameImg: "git.svg",
-  },
-];
-
-
-// Photos
+// Photos' Section
 export const photosTitle = "My Photos From Intro to Photography In High School"
 
 export const photos = [
@@ -578,165 +571,41 @@ export const photos = [
   }
 ];
 
-// Footer
-// tech and tools - React Icons
-const techToolsIconSize = '50px';
-const techToolsBorder = '1px solid white';
-const techToolsPadding = '4px';
-export const techTools = [
+// Footer Section
+// Tools
+export const tools = [
   {
     id: 1,
-    name: "Python",
-    icon: <FaPython style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
+    name: "Next.js",
+    img: "/nextjs.svg",
+    nameImg: "nextjs.svg",
   },
   {
     id: 2,
-    name: "Java",
-    icon: <FaJava style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
+    name: "TailwindCSS",
+    img: "/tailwindcss.svg",
+    nameImg: "tailwindcss.svg",
   },
   {
     id: 3,
-    name: "JavaScript",
-    icon: <IoLogoJavascript style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 3,
-    name: "Typescript",
-    icon: <TbBrandTypescript style={{ fontSize: "60px", margin: "-5px" }} />,
+    name: "Framer Motion",
+    img: "/framer.svg",
+    nameImg: "framer.svg",
   },
   {
     id: 4,
-    name: "HTML5",
-    icon: <FaHtml5 style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
+    name: "Acternity UI",
+    img: "/acternity.svg",
+    nameImg: "acternity.svg",
   },
   {
     id: 5,
-    name: "CSS3",
-    icon: <DiCss3 style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 6,
-    name: "Node.js",
-    icon: <FaNode style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 7,
-    name: "React",
-    icon: <FaReact style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 8,
-    name: "Visual Studio",
-    icon: <SiVisualstudiocode style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 9,
-    name: "Linux",
-    icon: <FaLinux style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 10,
-    name: "Markdown",
-    icon: <FaMarkdown style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 11,
-    name: "Database",
-    icon: <FaDatabase style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 12,
-    name: "MySQL",
-    icon: <DiMysql style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 13,
-    name: "PostgreSQL",
-    icon: <DiPostgresql style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 14,
-    name: "SQLite",
-    icon: <DiSqllite style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 15,
-    name: "Terminal",
-    icon: <DiTerminal style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 16,
-    name: "Git Branch",
-    icon: <FaGitAlt style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 17,
     name: "GitHub",
-    icon: <FaGithub style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
+    img: "/git.svg",
+    nameImg: "git.svg",
   },
-  {
-    id: 18,
-    name: "Responsive",
-    icon: <DiResponsive style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 19,
-    name: "NPM",
-    icon: <FaNpm style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 20,
-    name: "AWS",
-    icon: <FaAws style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 21,
-    name: "Next.js",
-    icon: <SiNextdotjs style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 22,
-    name: "Microsoft Azure",
-    icon: <SiMicrosoftazure style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 23,
-    name: "Vercel",
-    icon: <SiVercel style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 24,
-    name: "Tailwind CSS",
-    icon: <SiTailwindcss style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 25,
-    name: "OpenAI",
-    icon: <SiOpenai style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 26,
-    name: "Firebase",
-    icon: <RiFirebaseLine style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} />,
-  },
-  {
-    id: 27,
-    name: "Pinecone",
-    icon: <Image style={{ fontSize: techToolsIconSize, border: techToolsBorder, padding: techToolsPadding }} width={45} height={45} src="pinecone-icon-seeklogo.svg" />
-  }
 ];
-
-export const personalInfo = {
-  photo: "Kyle_Huang.png",
-  name: "Kyle Huang",
-  email: "kylehuang041@gmail.com",
-  school: "University of Washington - Bothell",
-  major: "Computer Science and Software Engineering",
-  concentration: "Information Assurance and Cybersecurity",
-  status: "New Graduate"
-}
-
-// social media
+// Social Media Icons
 export const socialMedia = [
   {
     id: 1,
@@ -750,4 +619,42 @@ export const socialMedia = [
     alt: "GitHub",
     link: "https://github.com/kylehuang041",
   },
+];
+
+const iconStyle = {
+  fontSize: '50px',
+  border: '1px solid white',
+  padding: '4px',
+};
+export const techTools = [
+  { id: 1, name: "Python", icon: <FaPython style={iconStyle} /> },
+  { id: 2, name: "Java", icon: <FaJava style={iconStyle} /> },
+  { id: 3, name: "JavaScript", icon: <IoLogoJavascript style={iconStyle} /> },
+  { id: 4, name: "Typescript", icon: <TbBrandTypescript style={{ fontSize: "60px", margin: "-5px" }} /> },
+  { id: 5, name: "HTML5", icon: <FaHtml5 style={iconStyle} /> },
+  { id: 6, name: "CSS3", icon: <DiCss3 style={iconStyle} /> },
+  { id: 7, name: "Node.js", icon: <FaNode style={iconStyle} /> },
+  { id: 8, name: "React", icon: <FaReact style={iconStyle} /> },
+  { id: 9, name: "Visual Studio", icon: <DiVisualstudio style={iconStyle} /> },
+  { id: 10, name: "Linux", icon: <FaLinux style={iconStyle} /> },
+  { id: 11, name: "Markdown", icon: <FaMarkdown style={iconStyle} /> },
+  { id: 12, name: "Database", icon: <FaDatabase style={iconStyle} /> },
+  { id: 13, name: "MySQL", icon: <DiMysql style={iconStyle} /> },
+  { id: 14, name: "PostgreSQL", icon: <DiPostgresql style={iconStyle} /> },
+  { id: 15, name: "SQLite", icon: <DiSqllite style={iconStyle} /> },
+  { id: 16, name: "Terminal", icon: <DiTerminal style={iconStyle} /> },
+  { id: 17, name: "Git Branch", icon: <FaGitAlt style={iconStyle} /> },
+  { id: 18, name: "GitHub", icon: <FaGithub style={iconStyle} /> },
+  { id: 19, name: "Responsive", icon: <DiResponsive style={iconStyle} /> },
+  { id: 20, name: "NPM", icon: <FaNpm style={iconStyle} /> },
+  { id: 21, name: "AWS", icon: <FaAws style={iconStyle} /> },
+  { id: 22, name: "Next.js", icon: <SiNextdotjs style={iconStyle} /> },
+  { id: 23, name: "Microsoft Azure", icon: <VscAzure style={iconStyle} /> },
+  { id: 24, name: "Vercel", icon: <IoLogoVercel style={iconStyle} /> },
+  { id: 25, name: "Tailwind CSS", icon: <RiTailwindCssFill style={iconStyle} /> },
+  { id: 26, name: "OpenAI", icon: <AiFillOpenAI style={iconStyle} /> },
+  { id: 27, name: "Firebase", icon: <RiFirebaseLine style={iconStyle} /> },
+  { id: 28, name: "Pinecone", icon: <Image style={iconStyle} width={45} height={45} src="pinecone-icon-seeklogo.svg" /> },
+  { id: 29, name: "Hugging Face", icon: <SiHuggingface style={iconStyle} /> },
+  { id: 30, name: "FastAPI", icon: <SiFastapi style={iconStyle} /> },
 ];
