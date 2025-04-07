@@ -149,14 +149,14 @@ export const workExperience = [
   {
     id: 1,
     company: "Product Manager Accelerator",
-    title: "AI Engineer",
+    title: "AI Engineer (Seasonal Contract)",
     date: "February 2025 - April 2025",
     desc: "Collaborating with a small team of developers and product managers to develop using AI/ML. Implementing design patterns and maintaining code quality in an Agile environment."
   },
   {
     id: 2,
     company: "NoteNinjaCo",
-    title: "Software Development Engineer",
+    title: "Founding Software Development Engineer",
     date: "August 2024 - December 2024",
     desc: "Developed a startup with 2 engineers on a interactive study platform targets towards college students. It has a chatbot for learning and support. It can generate quizzes, summaries/notes, and flashcards using AI from user input."
   },
