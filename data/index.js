@@ -149,7 +149,7 @@ export const workExperience = [
   {
     id: 1,
     company: "Product Manager Accelerator",
-    title: "AI Engineer (Seasonal Contract)",
+    title: "AI Engineer (Contract)",
     date: "February 2025 - April 2025",
     desc: "Collaborating with a small team of developers and product managers to develop using AI/ML. Implementing design patterns and maintaining code quality in an Agile environment."
   },
