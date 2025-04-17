@@ -208,7 +208,7 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <p className="text-white">&copy; 2024 - All rights reserved</p>
+        <p className="text-white">&copy; {new Date().getFullYear()} - All rights reserved</p>
       </div>
     </footer>
   );
