@@ -21,7 +21,8 @@ import {
   DiMysql,
   DiTerminal,
   DiResponsive,
-  DiVisualstudio
+  DiVisualstudio,
+  DiRedis
 } from 'react-icons/di'
 import {
   SiNextdotjs,
@@ -657,4 +658,5 @@ export const techTools = [
   { id: 28, name: "Pinecone", icon: <Image style={iconStyle} width={45} height={45} src="pinecone-icon-seeklogo.svg" /> },
   { id: 29, name: "Hugging Face", icon: <SiHuggingface style={iconStyle} /> },
   { id: 30, name: "FastAPI", icon: <SiFastapi style={iconStyle} /> },
+  { id: 31, name: "Redis", icon: <DiRedis style={iconStyle} /> },
 ];
