@@ -151,7 +151,7 @@ export const workExperience = [
     id: 1,
     company: "Product Manager Accelerator",
     title: "AI Engineer (Contract)",
-    date: "February 2025 - April 2025",
+    date: "January 2025 - April 2025",
     desc: "Collaborating with a small team of developers and product managers to develop using AI/ML. Implementing design patterns and maintaining code quality in an Agile environment."
   },
   {
@@ -159,7 +159,11 @@ export const workExperience = [
     company: "NoteNinjaCo",
     title: "Founding Software Development Engineer",
     date: "August 2024 - December 2024",
-    desc: "Developed a startup with 2 engineers on a interactive study platform targets towards college students. It has a chatbot for learning and support. It can generate quizzes, summaries/notes, and flashcards using AI from user input."
+    desc: "Developed a startup with 2 engineers on a interactive study platform targets towards college students. It has a chatbot for learning and support. It can generate quizzes, summaries/notes, and flashcards using AI from user input.",
+    links: {
+      "GitHub": "https://github.com/IshimweGentil/noteninjaco",
+      "Website": "https://www.noteninja.co/"
+    }
   },
   {
     id: 3,
@@ -181,6 +185,9 @@ export const workExperience = [
     title: "Fullstack Software Engineer Intern",
     date: "January 2024 - June 2024",
     desc: "Created an appointment booking website for a cleaning business from scratch with a team of two developers.",
+    links: {
+      "Website": "lijie-clean.net"
+    }
   },
 ];
 
